@@ -47,12 +47,10 @@ class Api extends Component {
                     <th>Description</th>
                 </tr>
                     {this.state.data.map(data => 
-                        <div key={data}> 
-                            <tr>
-                                <td>{data.itemNo}</td>
-                                <td>{data.description}</td> 
-                            </tr>
-                        </div>)}
+                        <tr key={data.itemNo}> 
+                            <td>{data.itemNo}</td>
+                            <td>{data.description}</td> 
+                        </tr>)}
             </div>
         );
     }
